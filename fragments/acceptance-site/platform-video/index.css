@@ -1,0 +1,74 @@
+.platform-video {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    color: #333333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.video-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.video-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666666;
+}
+
+.video-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.video-thumb {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.video-wrapper:hover .video-thumb {
+    transform: scale(1.03);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 35, 149, 0.9);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding-left: 5px;
+}
+
+.play-button svg {
+    width: 32px;
+    height: 32px;
+}
+
+.video-wrapper:hover .play-button {
+    background-color: #002395;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .video-title {
+        font-size: 1.75rem;
+    }
+    .platform-video {
+        padding: 60px 0;
+    }
+}

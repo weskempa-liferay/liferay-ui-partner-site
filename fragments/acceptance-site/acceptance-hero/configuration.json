@@ -1,0 +1,14 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "backgroundColor",
+          "label": "Background Color",
+          "type": "color_picker",
+          "defaultValue": "#002395"
+        }
+      ]
+    }
+  ]
+}

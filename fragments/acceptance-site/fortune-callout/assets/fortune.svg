@@ -1,0 +1,6 @@
+<svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="80" fill="#002395"/>
+  <text x="10" y="30" fill="white" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="10">FORTUNE</text>
+  <text x="10" y="50" fill="white" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="18">AIQ 50</text>
+  <path d="M10 60 H110" stroke="white" stroke-width="2" opacity="0.3"/>
+</svg>

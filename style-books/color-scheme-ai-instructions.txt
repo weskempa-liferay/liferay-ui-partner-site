@@ -1,0 +1,13 @@
+List the following as a hex web color palette
+
+Primary Color Darkest
+Primary Color
+Primary Color Lightest
+
+Secondary Color Darkest
+Secondary Color
+Secondary Color Lightest
+
+Six accent colors
+
+Info, Success, Warning, and Error colors
