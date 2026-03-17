@@ -18,6 +18,7 @@ Internal folder structure:
 ## 2. The Liferay Way (Framework Rules)
 
 - **Editable Content**: Use `data-lfr-editable-id` and `data-lfr-editable-type="text"` for all text. **Do not** create configuration fields for text that can be edited directly in the page editor.
+- **SVGs & Icons**: Never place `<svg>` or `<i>` icon tags inside an element with `data-lfr-editable-id`. If an icon must be inside a button, place the editable text in a separate `<span>` or move the SVG after the editable tag to prevent it from being overwritten by user edits.
 - **Auto-Isolated Scoping**: 
     - **JS**: Use the globally provided `fragmentElement` variable. Never manually query the root element using `document.getElementById` or `${fragmentNamespace}`.
     - **HTML**: Do not manually add the fragment namespace ID to the root element; Liferay handles this.
@@ -71,3 +72,11 @@ Always include explicit paths to all files to ensure successful import:
     ```
 - **URL Parameters**: Retrieve context from the URL using `new URLSearchParams(window.location.search)`.
 
+## 7. Configuration Fields (`configuration.json`)
+
+- **Field Types**: Use standard Liferay field types for fragment configuration.
+    - **Color**: Use `"type": "colorPicker"` (camelCase) to provide a color selection interface for users.
+    - **Toggle**: Use `"type": "checkbox"` for simple boolean switches.
+    - **Select**: Use `"type": "select"` for multiple choice options.
+- **Default Values**: Always provide sensible default values to ensure the fragment looks good immediately after being dropped on a page.
+- **Naming**: Use descriptive internal names (e.g., `backgroundColor`) and user-friendly labels.

@@ -5,7 +5,7 @@
         {
           "name": "backgroundColor",
           "label": "Background Color",
-          "type": "color_picker",
+          "type": "colorPicker",
           "defaultValue": "#002395"
         }
       ]

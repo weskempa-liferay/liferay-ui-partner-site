@@ -68,10 +68,6 @@
     text-decoration: none !important;
     font-size: 1rem;
     font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
     line-height: 1.2;
 }
 

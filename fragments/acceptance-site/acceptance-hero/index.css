@@ -21,7 +21,7 @@
     max-width: 90%;
 }
 
-.hero-btn {
+.hero-btn-container {
     background-color: #ffffff !important;
     color: #002395 !important;
     border: none !important;
@@ -33,14 +33,17 @@
     align-items: center !important;
     gap: 8px !important;
     transition: all 0.3s ease !important;
-    text-decoration: none !important;
 }
 
-.hero-btn:hover {
+.hero-btn-container:hover {
     background-color: #f8f9fa !important;
-    color: #002395 !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-btn {
+    color: #002395 !important;
+    text-decoration: none !important;
 }
 
 .arrow-icon {
